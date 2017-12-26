@@ -12,9 +12,11 @@
 		784AFE821FF2452100639C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784AFE801FF2452100639C20 /* Main.storyboard */; };
 		784AFE841FF2452100639C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784AFE831FF2452100639C20 /* Assets.xcassets */; };
 		784AFE871FF2452100639C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784AFE851FF2452100639C20 /* LaunchScreen.storyboard */; };
+		8719F5649D92F95CCA5FE08D /* Pods_BAt_D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228E608590D5D613A08D0631 /* Pods_BAt_D.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		228E608590D5D613A08D0631 /* Pods_BAt_D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAt_D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		784AFE791FF2452100639C20 /* BAt_D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAt_D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784AFE7C1FF2452100639C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		784AFE7E1FF2452100639C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		784AFE831FF2452100639C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		784AFE861FF2452100639C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		784AFE881FF2452100639C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784AFE8E1FF2465500639C20 /* BAt_D-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAt_D-Bridging-Header.h"; sourceTree = "<group>"; };
+		A4C69786169D51BA0564A62A /* Pods-BAt_D.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAt_D.release.xcconfig"; path = "Pods/Target Support Files/Pods-BAt_D/Pods-BAt_D.release.xcconfig"; sourceTree = "<group>"; };
+		FB0DD8F7D6B098D221CDDDE1 /* Pods-BAt_D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAt_D.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BAt_D/Pods-BAt_D.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8719F5649D92F95CCA5FE08D /* Pods_BAt_D.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56E145D04D3D41F4401D5311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				228E608590D5D613A08D0631 /* Pods_BAt_D.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B9EFA98901B064B39B15536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB0DD8F7D6B098D221CDDDE1 /* Pods-BAt_D.debug.xcconfig */,
+				A4C69786169D51BA0564A62A /* Pods-BAt_D.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		784AFE701FF2452100639C20 = {
 			isa = PBXGroup;
 			children = (
 				784AFE7B1FF2452100639C20 /* BAt_D */,
 				784AFE7A1FF2452100639C20 /* Products */,
+				5B9EFA98901B064B39B15536 /* Pods */,
+				56E145D04D3D41F4401D5311 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 				784AFE831FF2452100639C20 /* Assets.xcassets */,
 				784AFE851FF2452100639C20 /* LaunchScreen.storyboard */,
 				784AFE881FF2452100639C20 /* Info.plist */,
+				784AFE8E1FF2465500639C20 /* BAt_D-Bridging-Header.h */,
 			);
 			path = BAt_D;
 			sourceTree = "<group>";
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 784AFE8B1FF2452100639C20 /* Build configuration list for PBXNativeTarget "BAt_D" */;
 			buildPhases = (
+				5177D8C3EEEF65A43058398A /* [CP] Check Pods Manifest.lock */,
 				784AFE751FF2452100639C20 /* Sources */,
 				784AFE761FF2452100639C20 /* Frameworks */,
 				784AFE771FF2452100639C20 /* Resources */,
+				0DA56C48EEB527ED47362EA5 /* [CP] Embed Pods Frameworks */,
+				20985E8B74B81F4FD99B7AE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,7 @@
 				TargetAttributes = {
 					784AFE781FF2452100639C20 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +160,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DA56C48EEB527ED47362EA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BAt_D/Pods-BAt_D-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BATabBarController/BATabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BATabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BAt_D/Pods-BAt_D-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20985E8B74B81F4FD99B7AE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BAt_D/Pods-BAt_D-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5177D8C3EEEF65A43058398A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BAt_D-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		784AFE751FF2452100639C20 /* Sources */ = {
@@ -272,13 +358,17 @@
 		};
 		784AFE8C1FF2452100639C20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0DD8F7D6B098D221CDDDE1 /* Pods-BAt_D.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BAt_D/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.day.BAt-D";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BAt_D/BAt_D-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +376,16 @@
 		};
 		784AFE8D1FF2452100639C20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C69786169D51BA0564A62A /* Pods-BAt_D.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BAt_D/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.day.BAt-D";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BAt_D/BAt_D-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

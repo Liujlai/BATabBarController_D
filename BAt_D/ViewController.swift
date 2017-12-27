@@ -24,16 +24,17 @@ class ViewController: UIViewController,BATabBarControllerDelegate {
     }
 
     override func viewDidLayoutSubviews() {
-        if self.firstTime! {
+        if self.firstTime {
             var tabBarItem: BATabBarItem!
             var tabBarItem2: BATabBarItem!
             var tabBarItem3: BATabBarItem!
+            var tabBarItem4: BATabBarItem!
             let vc1: UIViewController = UIViewController()
             let vc2: UIViewController = UIViewController()
             let vc3: UIViewController = UIViewController()
             vc1.view.backgroundColor = UIColor(hex: 0x222B30)
             vc2.view.backgroundColor = UIColor(hex: 0x222B30)
-            vc3.view.backgroundColor = UIColor(hex: 0x222B30)
+            vc3.view.backgroundColor = UIColor.orange
             switch self.demoType {
             case .WithText:
                 
@@ -53,12 +54,13 @@ class ViewController: UIViewController,BATabBarControllerDelegate {
             case .NoText:
                 
                 tabBarItem = BATabBarItem(image: UIImage(named: "icon1_unselected"), selectedImage: UIImage(named: "icon1"))
-                let badge: BATabBarBadge = BATabBarBadge(value: 8, backgroundColor: UIColor.red)
-                tabBarItem.badge = badge
+//                let badge: BATabBarBadge = BATabBarBadge(value: 8, backgroundColor: UIColor.red)
+//                tabBarItem.badge = badge
                 tabBarItem2 = BATabBarItem(image: UIImage(named: "icon2_unselected"), selectedImage: UIImage(named: "icon2"))
                 tabBarItem3 = BATabBarItem(image: UIImage(named: "icon3_unselected"), selectedImage: UIImage(named: "icon3"))
-                let badge3: BATabBarBadge = BATabBarBadge(value: 8234, backgroundColor: UIColor.red)
-                tabBarItem3.badge = badge3
+//                let badge3: BATabBarBadge = BATabBarBadge(value: 8234, backgroundColor: UIColor.red)
+//                tabBarItem3.badge = badge3
+                tabBarItem4 = BATabBarItem(image: UIImage(named: "icon3_unselected"), selectedImage: UIImage(named: "icon3"))
                 break
                 
             default:
@@ -76,8 +78,9 @@ class ViewController: UIViewController,BATabBarControllerDelegate {
             //Hides the tab bar when true
             //        self.vc.hidesBottomBarWhenPushed = YES;
             //        self.vc.tabBar.hidden = YES;
-            self.vc.viewControllers = [vc1,vc2,vc3]
-            self.vc.tabBarItems = [tabBarItem,tabBarItem2,tabBarItem3]
+            self.vc.viewControllers = [vc1,vc2,vc3,vc3]
+            self.vc.tabBarItems = [tabBarItem,tabBarItem2,tabBarItem3,tabBarItem4]
+            self.vc.tabBarBackgroundColor = UIColor.white
             self.vc.setSelectedView(vc2, animated: false)
             self.vc.delegate = self
             self.view.addSubview(self.vc.view)
